@@ -30,8 +30,16 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    models:
+      book: Books
+    attributes:
+      book:
+        title: Title
+        memo: Memo
+        author: Author
+        picture: Picture
   title:
-    index: Books
     new: New Book
     edit: Editing Book
   link:
@@ -49,8 +57,3 @@ en:
     book_created: Book was successfully created.
     book_updated: Book was successfully updated.
     book_destroyed: Book was successfully destroyed.
-  book:
-    title: Title
-    memo: Memo
-    author: Author
-    picture: Picture

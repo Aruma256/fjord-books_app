@@ -1,6 +1,14 @@
 ja:
+  activerecord:
+    models:
+      book: 本
+    attributes:
+      book:
+        title: タイトル
+        memo: メモ
+        author: 著者
+        picture: 写真
   title:
-    index: 本
     new: 本の作成
     edit: 本の編集
   link:
@@ -18,8 +26,3 @@ ja:
     book_created: 本を作成しました。
     book_updated: 本を更新しました。
     book_destroyed: 本を削除しました。
-  book:
-    title: タイトル
-    memo: メモ
-    author: 著者
-    picture: 写真
