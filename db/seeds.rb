@@ -47,7 +47,7 @@ end
     password: Faker::Internet.password,
     email: Faker::Internet.email,
     postcode: Faker::Address.postcode,
-    address: Faker::Address.street_address,
+    address: Faker::Address.city,
     selfintroduction: Faker::Marketing.buzzwords
   )
 end
