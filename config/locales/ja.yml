@@ -216,6 +216,7 @@ ja:
       title_new: "%{name}の新規作成"
       title_edit: "%{name}の編集"
       signed_in_as: ログイン中のID
+      edit_account: アカウント情報を編集する
       sign_out: ログアウトする
     pagination:
       first: '最初'
