@@ -1,0 +1,2 @@
+<p><%= t('views.common.signed_in_as') %> : <%= current_user.email %></p>
+<p><%= link_to t('views.common.sign_out'), destroy_user_session_path, method: :delete %></p>
