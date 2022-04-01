@@ -1,0 +1,25 @@
+<%= render partial: 'users/account_info' %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= User.human_attribute_name(:email) %>:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:postcode) %>:</strong>
+  <%= @user.postcode %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:address) %>:</strong>
+  <%= @user.address %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:selfintroduction) %>:</strong>
+  <%= @user.selfintroduction %>
+</p>
+
+<%= link_to t('views.common.back'), users_path %>
