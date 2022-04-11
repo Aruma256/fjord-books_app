@@ -1,5 +1,7 @@
 FROM ruby:3.0.1
 
-RUN gem install rails -v "6.1.3.1"
+COPY . /booksapp
+WORKDIR /booksapp
+RUN bundle install
 
-CMD rails --version
+CMD rails -v
