@@ -1,5 +1,5 @@
-FROM ruby:2.7
+FROM ruby:3.0.1
 
-RUN date > /now.txt
+RUN gem install rails -v "6.1.3.1"
 
-CMD cat /now.txt
+CMD rails --version
