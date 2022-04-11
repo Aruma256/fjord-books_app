@@ -4,4 +4,4 @@ COPY . /booksapp
 WORKDIR /booksapp
 RUN bundle install
 
-CMD rails -v
+CMD rails s -b 0.0.0.0
