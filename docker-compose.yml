@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "12321:3000"
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    platform: linux/x86_64
