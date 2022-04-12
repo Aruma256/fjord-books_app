@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - "12321:3000"
+    depends_on:
+      - "db"
   db:
     image: mysql:5.7
     environment:
