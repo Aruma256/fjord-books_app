@@ -11,3 +11,5 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
     platform: linux/x86_64
+    volumes:
+      - .db:/var/lib/mysql
