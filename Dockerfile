@@ -8,4 +8,4 @@ RUN bundle install
 VOLUME /app
 WORKDIR /app
 
-CMD rails s -b 0.0.0.0
+CMD rm tmp/pids/server.pid 2>/dev/null; rails s -b 0.0.0.0
