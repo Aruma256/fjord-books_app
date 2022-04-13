@@ -10,10 +10,9 @@ services:
     volumes:
       - .:/app
   db:
-    image: mysql:5.7
+    image: mysql:8-oracle
     environment:
       MYSQL_ROOT_PASSWORD: example
-    platform: linux/x86_64
     volumes:
       - type: volume
         source: db-data
