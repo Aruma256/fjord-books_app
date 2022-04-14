@@ -22,5 +22,6 @@ services:
       test: "mysqladmin ping -h 127.0.0.1 -P 3306"
       interval: 3s
       retries: 5
+      start_period: 40s
 volumes:
   db-data:
