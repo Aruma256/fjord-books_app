@@ -4,3 +4,24 @@ services:
     build: .
     ports:
       - "12321:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - .:/app
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    platform: linux/x86_64
+    volumes:
+      - type: volume
+        source: db-data
+        target: /var/lib/mysql
+    healthcheck:
+      test: "mysqladmin ping -h 127.0.0.1 -P 3306"
+      interval: 3s
+      retries: 5
+      start_period: 40s
+volumes:
+  db-data:
