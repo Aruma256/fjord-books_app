@@ -23,5 +23,20 @@ services:
       interval: 3s
       retries: 5
       start_period: 40s
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - type: bind
+        source: web/conf
+        target: /etc/nginx/conf.d/
+        read_only: true
+      - type: bind
+        source: web/html
+        target: /usr/share/nginx/html/
+        read_only: true
+    depends_on:
+      - booksapp
 volumes:
   db-data:
